@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rewards - Ecosmart</title>
+    <link rel="stylesheet" href="reward_sctyle.css">
+    <link rel="stylesheet" href="certificate_style.css"> <!-- Link for certificate styles -->
+</head>
+<body>
+    <header>
+        <h1>Rewards</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="greenbot.html">Greenbot</a></li>
+                <li><a href="rewards.html">Rewards</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="rewards-section">
+        <h2>Earn Rewards</h2>
+        <p>Complete sustainability tasks to earn stars!</p>
+        <div class="tasks" id="task-list">
+            <div class="task" onclick="completeTask('task1')">
+                <h3>Recycle Plastic Bottles</h3>
+                <p>Recycle at least 5 plastic bottles this week.</p>
+            </div>
+            <div class="task" onclick="completeTask('task2')">
+                <h3>Plant a Tree</h3>
+                <p>Plant a tree in your backyard or community.</p>
+            </div>
+            <div class="task" onclick="completeTask('task3')">
+                <h3>Use Public Transport</h3>
+                <p>Use public transport instead of driving for a week.</p>
+            </div>
+        </div>
+        
+        <div class="add-task">
+            <h3>Add Your Task</h3>
+            <input type="text" id="task-name" placeholder="Task Name" />
+            <input type="text" id="task-description" placeholder="Task Description" />
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="reward-display">
+            <h3>Your Stars:</h3>
+            <div id="star-container"></div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <p id="reward-message"></p>
+        </div>
+    </section>
+
+    <!-- Certificate Section -->
+    <div id="certificate-section" style="display: none;">
+        <h2>Congratulations!</h2>
+        <p>You have earned 5 stars!</p>
+        <input type="text" id="user-name" placeholder="Enter your name" class="name-input" />
+        <button onclick="generateCertificate()" class="generate-button">Generate Certificate</button>
+    </div>
+
+    <div id="certificate" style="display: none;">
+        <div class="certificate-content">
+            <h2>Certificate of Achievement</h2>
+            <p id="certificate-name"></p>
+            <p>This certifies that</p>
+            <p>has completed the sustainability tasks and earned 5 stars!</p>
+            <button id="download-btn" onclick="downloadCertificate()" class="download-button">Download Certificate</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ecosmart. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="reward_script.js"></script>
+</body>
+</html>

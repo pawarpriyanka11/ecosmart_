@@ -1,0 +1,62 @@
+#certificate {
+    display: none; /* Initially hidden */
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid #4CAF50;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    max-width: 600px;
+    position: relative;
+}
+
+.certificate-content {
+    font-family: 'Georgia', serif;
+    color: #333;
+}
+
+.certificate-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.certificate-content p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.name-input {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.generate-button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.generate-button:hover {
+    background-color: #45a049;
+}
+
+.download-button {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: #2980b9;
+}
